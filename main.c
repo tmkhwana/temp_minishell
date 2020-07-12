@@ -6,7 +6,7 @@
 /*   By: pntsunts <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 08:14:14 by pntsunts          #+#    #+#             */
-/*   Updated: 2020/07/12 09:18:16 by pntsunts         ###   ########.fr       */
+/*   Updated: 2020/07/12 12:27:33 by pntsunts         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ static int check_args(char **str)
 		check(str);
 		return (1);
 	}
-	return (0);
+	return (forking(str[0], str));
 }
 
 static void	readFiles(void)
