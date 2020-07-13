@@ -6,7 +6,7 @@
 /*   By: pntsunts <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/24 11:05:26 by pntsunts          #+#    #+#             */
-/*   Updated: 2020/07/12 12:29:39 by pntsunts         ###   ########.fr       */
+/*   Updated: 2020/07/13 10:33:49 by pntsunts         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,7 @@ size_t  dataLen(char **str);
 int checkStr(char **str);
 int check(char **str);
 int forking(char *str, char **arg);
+void ft_echo(char **str);
+char *Get_path(char *str);
 
 #endif

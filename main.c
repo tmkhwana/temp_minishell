@@ -6,7 +6,7 @@
 /*   By: pntsunts <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/09 08:14:14 by pntsunts          #+#    #+#             */
-/*   Updated: 2020/07/12 12:27:33 by pntsunts         ###   ########.fr       */
+/*   Updated: 2020/07/13 11:11:01 by pntsunts         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,9 @@ static int check_args(char **str)
 
 	if (!str || !*str || !**str || str[0] == NULL)
 		return (1);
-	else if (ft_strcmp(*str, "echo") == 0)
+	else if (ft_strcmp(*str, "exit") == 0)
 	{
-		ft_putendl("HELLO");
-		return (1);
+		return (0);
 	}
 	else if (ft_strcmp(*str, "env") == 0)
 	{
@@ -70,6 +69,11 @@ static int check_args(char **str)
 	else if (ft_strcmp(*str, "unset") == 0)
 	{
 		check(str);
+		return (1);
+	}
+	else if (ft_strcmp(*str, "echo") == 0)
+	{
+		ft_echo(str);
 		return (1);
 	}
 	return (forking(str[0], str));
@@ -114,6 +118,7 @@ int main(int ac, char **av, char **str)
 	(void)av;
 	getData(str);
 	readFiles();
+//	sleep(10);
 	return (0);
 }
 

@@ -6,7 +6,7 @@
 #    By: pntsunts <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/06/24 10:43:56 by pntsunts          #+#    #+#              #
-#    Updated: 2020/07/12 12:24:53 by pntsunts         ###   ########.fr        #
+#    Updated: 2020/07/13 10:33:06 by pntsunts         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = minishell
 
 FLAGS = -Wall -Werror -Wextra
 
-SRC = main.c get_next_line.c ft_setenv.c ft_unsetenv.c fork.c
+SRC = main.c get_next_line.c ft_setenv.c ft_unsetenv.c fork.c ft_echo.c
 
 OBJ = $(SRC:.c=.o)
 
