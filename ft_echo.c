@@ -6,7 +6,7 @@
 /*   By: pntsunts <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/13 09:32:57 by pntsunts          #+#    #+#             */
-/*   Updated: 2020/07/14 14:28:57 by pntsunts         ###   ########.fr       */
+/*   Updated: 2020/07/14 16:06:17 by pntsunts         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 	return (0);
 }*/
 
-static int		compare(char *str1, char *str2)
+ int		compare(char *str1, char *str2)
 {
 	int i;
 

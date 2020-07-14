@@ -6,7 +6,7 @@
 /*   By: pntsunts <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/24 11:05:26 by pntsunts          #+#    #+#             */
-/*   Updated: 2020/07/13 14:21:14 by pntsunts         ###   ########.fr       */
+/*   Updated: 2020/07/14 16:06:20 by pntsunts         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ int check(char **str);
 int forking(char *str, char **arg);
 int ft_echo(char **str);
 char *Get_path(char *str);
+int compare(char *str1, char *str2);
 
 #endif

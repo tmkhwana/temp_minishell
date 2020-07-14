@@ -6,7 +6,7 @@
 /*   By: pntsunts <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/12 09:08:42 by pntsunts          #+#    #+#             */
-/*   Updated: 2020/07/12 09:54:39 by pntsunts         ###   ########.fr       */
+/*   Updated: 2020/07/14 16:19:01 by pntsunts         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,16 +39,24 @@ void env_cop(char **env)
 
 void env_unset(char *str)
 {
-	(void)str;
 	char **store;
+	char *tmp;
+	int i = 0;
 
 	store = (char **)malloc(sizeof(char *) * (envLe(Data) + 1));
 	env_cop(store);
 	free(Data);
 	Data = NULL;
 	Data = store;
-	Data[envLe(Data) - 1] = NULL;
-	
+	while (Data[i])
+	{
+		tmp = ft_strjoin(str, "=");
+		if (compare(Data[i], tmp) == 1)
+		{
+			Data[envLe(Data) - 1] = NULL;
+		}
+		i++;
+	}
 }
 
 int check(char **str)
