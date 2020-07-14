@@ -14,7 +14,7 @@ NAME = minishell
 
 FLAGS = -Wall -Werror -Wextra
 
-SRC = main.c get_next_line.c ft_setenv.c ft_unsetenv.c fork.c ft_echo.c
+SRC = main.c get_next_line.c ft_setenv.c ft_unsetenv.c fork.c ft_echo.c cd.c
 
 OBJ = $(SRC:.c=.o)
 

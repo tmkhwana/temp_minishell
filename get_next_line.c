@@ -36,7 +36,7 @@ static int		read_and_join(const int fd, char **stack, char **lfeed)
 {
 	int			numchar;
 
-	while (*lfeed == '\0')
+	while (*lfeed == NULL)
 	{
 		numchar = ft_get_info(fd, *&stack);
 		if (numchar == 0)

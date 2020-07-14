@@ -46,10 +46,6 @@ static void printData()
 
 static int check_args(char **str)
 {
-	int run;
-
-	run = 1;
-
 	if (!str || !*str || !**str || str[0] == NULL)
 		return (1);
 	else if (ft_strcmp(*str, "exit") == 0)
@@ -74,6 +70,16 @@ static int check_args(char **str)
 	else if (ft_strcmp(*str, "echo") == 0)
 	{
 		ft_echo(str);
+		return (1);
+	}
+	else if (ft_strcmp(*str, "pwd") == 0)
+	{
+		pwd();
+		return (1);
+	}
+	else if (ft_strcmp(*str, "cd") == 0)
+	{
+		cd(str[1]);
 		return (1);
 	}
 	return (forking(str[0], str));

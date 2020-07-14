@@ -59,10 +59,11 @@ char	*Get_path(char *str)
 
 int ft_echo(char **str)
 {
-	char *path;
+	// char *path;
 	int i;
 
 	i = 1;
+
 	if (!str[1])
 	{
 		write(1, "\n", 1);
@@ -72,7 +73,7 @@ int ft_echo(char **str)
 	{
 		if (str[i][0] == '$')
 		{
-			path = Get_path(str[i++] + 1);
+			// path = Get_path(str[i++] + 1);
 			continue ;
 		}
 		ft_putstr(str[i++]);
